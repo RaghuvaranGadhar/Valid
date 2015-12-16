@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="FrontServlet" method="post">
+		<div align="center">
+			<table>
+				<tr>
+					<td>UserName:</td>
+					<td><input type="text" name="username" /></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<td>
+					<input type="submit" onclick="checkPass()"/>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	<script>
+		function checkPass() {
+
+			var password = document.getElementById('password');
+			var filter = /[a-z][0-9]/;
+
+			if (!filter.test(Pass.value)) {
+				alert('Please provide a valid Pass address');
+				password.focus;
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

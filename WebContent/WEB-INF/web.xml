@@ -1,0 +1,39 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <servlet>
+    <servlet-name>Fro</servlet-name>
+    <servlet-class>Fro</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Fro</servlet-name>
+    <url-pattern>/fro</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DesktopServlet</servlet-name>
+    <servlet-class>DesktopServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DesktopServlet</servlet-name>
+    <url-pattern>/DesktopServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LaptopServlet</servlet-name>
+    <servlet-class>LaptopServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LaptopServlet</servlet-name>
+    <url-pattern>/LaptopServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>  -->

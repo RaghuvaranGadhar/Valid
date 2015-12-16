@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DETAILS PAGE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+   <style>
+   
+   .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 45px;
+}
+   
+   .carousel {
+    position: relative;
+    width: 450px;
+}
+   
+  #main_div{
+  background-image:url('Paper Textures PPT Template.jpg');
+  background-color:#E8E8E8;
+width:1024px;
+height:720px;
+margin:0px auto;
+}
+
+
+  #nav {
+	<!--background-color:#C0C0C0;-->
+    line-height:30px;
+    height:585px;
+    width:150px;
+    float:left;
+    padding:5px;	
+}
+td:nth-child(2) {
+    padding-right: 20px;
+}​
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+ .nav>li>a {
+    width: 130px !important;
+}
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+
+<div id="main_div">
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="logo2.jpg" alt="Can't display logo" width="200" height="30"></a><a class="navbar-brand" ><strong>ASSET MANAGMENT SYSTEM</strong></a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	
+		<!--<nav class="navbar navbar-default">
+  <div class="container-fluid">
+  
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="logo2.jpg" alt="Cinque Terre" width="200" height="30"></a><a class="navbar-brand" href="#"><strong>ASSET MANAGMENT SYSTEM</strong></a>
+    </div>
+    
+  </div>-->
+</nav>
+
+	<div class="container">
+			
+		
+			<ul class="nav nav-pills">
+				<li class="active"><a data-toggle="pill" href="#home"><span class="glyphicon glyphicon-home"></span> HOME</a></li>	
+				<li><a data-toggle="pill" href="#desktop">DESKTOP</a></li>
+				<li><a data-toggle="pill" href="#laptop">LAPTOP</a></li>
+			</ul>
+
+			
+		
+		<div class="tab-content">
+		
+			<div id="home" class="tab-pane fade in active" >
+				<h3>HOME</h3>
+				<h1>UNDER CONSTRUCTION.</h1>
+				
+				<div class="content" >
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" width="200">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" >
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" >
+      <div class="item active">
+        <img src="IMG_20150821_203055.jpg" alt="Chania" width="360" height="345">
+      </div>
+
+      <div class="item">
+        <img src="IMG_20150730_123256.jpg" alt="Chania" width="360" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="TeamPhoto-LunchGathering[1].png" alt="Flower" width="360" height="345">
+      </div>
+
+      <div class="item">
+        <img src="IMG_20150730_134446.jpg" alt="Flower" width="360" height="345">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+				
+			</div>
+			
+			<div id="desktop" class="tab-pane fade">
+				<div id="nav">
+						<ul class="nav">
+							<li><a data-toggle="pill" id="btnadd" href="#add">ADD</a></li>
+							<li><a data-toggle="pill" id="btnallocate" href="#allocate">ALLOCATE</a></li>
+							<li><a data-toggle="pill" id="btnde-allocate" href="#de-allocate">DE-ALLOCATE</a></li>
+						</ul>	
+				</div>
+			
+				
+			
+					<h3>DESKTOP</h3>
+				<p id="abc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				
+				<div id="add" class="tab-pane fade">
+			
+			
+			<form role="form" name="desktopForm" action="DesktopServlet" method="post">
+			<div align="center">
+			<table>
+				<tr>
+					<td>ASSET_ID:</td>
+					<td><input type="text" name="asid"></td>
+					
+					<td>ASSET_NAME:</td>
+					<td><input required type="text" name="an"></td>
+				</tr>
+				<tr>
+					<td>ASSET_BELONGING:</td>
+					<td><input type="text" name="ab"></td>
+					
+					<td>ASSET_TAG:</td>
+					<td><input type="text" name="at"></td>
+				</tr>
+				
+				<tr>					
+					<td>CPUID:</td>
+					<td><input type="text" name="cpuid"></td>
+					
+					<td>FLOOR:</td>
+					<td><input type="text" name="floor"></td>
+				</tr>
+				
+				<tr>				
+					<td>HDD:</td>
+					<td><input type="text" name="hdd"></td>
+					
+					<td>LOCATION:</td>
+					<td><input type="text" name="location"></td>
+				</tr>
+				
+				<tr>
+					<td>MAKE:</td>
+					<td><input type="text" name="make"></td>
+					
+					<td>MODEL:</td>
+					<td><input type="text" name="model"></td>
+				</tr>
+				
+				<tr>
+					<td>OERATING_SYATEM:</td>
+					<td><input type="text" name="os"></td>
+					
+					<td>RAM:</td>
+					<td><input type="text" name="ram"></td>
+				</tr>
+								
+				<tr>
+					<td>SLOCATION:</td>
+					<td><input type="text" name="slocation"></td>
+					
+					<td>S_NO:</td>
+					<td><input type="text" name="sno"></td>
+				</tr>
+								
+				<tr>
+					<td>TYPE:</td>
+					<td><input type="text" name="type"></td>
+				</tr>
+				</table>
+				<br>
+				<br>
+				<table>
+				<tr align="center">
+					<td width=200><input type="submit" class="btn btn-success"/></td>
+					<td width=200><input type="reset" class="btn btn-danger"/></td>
+				</tr>
+			</table>
+
+
+		</div>
+		</form>
+				
+				
+			</div>
+				
+			</div>
+			
+			
+			<div id="laptop" class="tab-pane fade">
+			
+				<div id="nav">
+						<ul class="nav nav-pills">
+							<!--<li class="active"><a data-toggle="pill" href="#add">ADD</a></li>-->
+							<li><a data-toggle="pill" id="btnadd1" href="#add1">ADD</a></li>
+							<li><a data-toggle="pill" href="#allocate1">ALLOCATE</a></li>
+							<li><a data-toggle="pill" href="#de-allocate1">DE-ALLOCATE</a></li>
+						</ul>	
+				</div>
+				
+					<h3>LAPTOP</h3>
+				<p id="abc1">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				
+				<div id="add1" class="tab-pane fade">
+				
+				<form action="LaptopServlet" method="post">
+		<div align="center">
+			<table>
+				<tr>
+					<td>ASSET_NAME:</td>
+					<td><input required type="text" name="an"></td>
+					
+					<td>ASSET_BELONGING:</td>
+					<td><input type="text" name="ab"></td>
+				</tr>
+				
+				<tr>
+					<td>ASSET_TAG:</td>
+					<td><input type="text" name="at"></td>
+					
+					<td>CPUID:</td>
+					<td><input type="text" name="cpuid"></td>
+				</tr>
+				
+				<tr>
+					<td>FLOOR:</td>
+					<td><input type="text" name="floor"></td>
+					
+					<td>HDD:</td>
+					<td><input type="text" name="hdd"></td>
+				</tr>
+				
+				<tr>
+					<td>LOCATION:</td>
+					<td><input type="text" name="location"></td>
+					
+					<td>MAKE:</td>
+					<td><input type="text" name="make"></td>
+				</tr>
+				
+				<tr>
+					<td>MODEL:</td>
+					<td><input type="text" name="model"></td>
+					
+					<td>OERATING_SYATEM:</td>
+					<td><input type="text" name="os"></td>
+				</tr>
+				
+				<tr>
+					<td>RAM:</td>
+					<td><input type="text" name="ram"></td>
+					
+					<td>SLOCATION:</td>
+					<td><input type="text" name="slocation"></td>
+				</tr>
+				
+				<tr>
+					<td>S_NO:</td>
+					<td><input type="text" name="sno"></td>
+					
+					<td>TYPE:</td>
+					<td><input type="text" name="type"></td>
+				</tr>
+				
+				<tr>
+					<td>A_ID:</td>
+					<td><input type="text" name="aid"></td>
+					
+					<td>REMARKS:</td>
+					<td><input type="text" name="remarks"></td>
+				</tr>
+				
+				</table>
+				
+				<br>
+				<br>
+				
+				<table >
+				<tr align="center">
+					<td width=200><input type="submit" name="laptopSubmit" value="Submit" id="laptopSubmit" class="btn btn-success"/></td>
+					<td width=200><input type="reset" name="laptopReset" value="Reset" id="laptopReset" class="btn btn-danger"/></td>
+				</tr>
+			</table>
+
+		</div>
+	</form>
+	
+	
+	</div>
+				
+			</div>
+		
+			
+		
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+	
+    $("#btnadd").click(function(){
+        $("#abc").hide();
+    });
+	
+	$("#btnadd1").click(function(){
+        $("#abc1").hide();
+    }); 
+	$("#desktopSubmit").on('click', function(){
+	console.log('ddd');
+       preventdefault();
+    });
+	
+	$.ajax({
+		type: 'POST',
+		url: "DesktopServlet",
+		data: {ASSET_ID: asid, ASSET_NAME: an, ASSET_BELONGING: ab,ASSET_TAG: at,CPUID: cpuid,FLOOR: floor,HDD: hdd,LOCATION: location,MAKE: make,MODEL: model,OS: os,RAM: ram,SLOCATION: slocation,S_NO: sno,TYPE: type},
+		cached: false,
+		success: function(response) {
+		//alert(html);
+		//REdirecting to amother page
+		//window.location='details.html';
+		//console.log("success===>", response);
+		},
+		error: function(response) {
+			
+			
+			/* console.log("error", response); */
+		}
+  	    
+	});
+	
+	$.ajax({
+		type: 'POST',
+		url: "DesktopServlet",
+		data: {ASSET_NAME: an, ASSET_BELONGING: ab,ASSET_TAG: at,CPUID: cpuid,FLOOR: floor,HDD: hdd,LOCATION: location,MAKE: make,MODEL: model,OPERATING_SYSTEM: os,RAM: ram,SLOCATION: slocation,S_NO: sno,TYPE: type,A_ID: aid,REMARKS: remarks},
+		cached: false,
+		success: function(response) {
+		//alert(html);
+		//REdirecting to amother page
+		//window.location='details.html';
+		//console.log("success===>", response);
+		},
+		error: function(response) {
+			
+			
+			/* console.log("error", response); */
+		}
+  	    
+	});
+	
+</script>
+
+</body>
+</html>
